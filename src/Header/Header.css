@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #64ffda;
+    --hover-color: #64ffda;
+    --text-color: #ffffff;
+}
+
+.header {
+    /* position: sticky; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(2px); /* For additional smoothness */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Push navigation menu to the right */
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo-text:hover {
+    text-shadow: 0 0 8px var(--primary-color);
+    transform: scale(1.05);
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header nav ul li {
+    margin: 0 20px;
+    color: var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 19px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.header nav ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.header nav ul li:hover::before {
+    width: 120%;
+    left: -10%;
+}
+
+.header nav ul li:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.header nav ul li:active {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.header nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: var(--text-color);
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.header nav ul li:hover::after {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .header nav ul li {
+        margin: 10px 0;
+    }
+}
