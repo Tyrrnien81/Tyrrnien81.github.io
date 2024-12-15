@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import "./Home.css";
@@ -10,8 +10,6 @@ import linkedin from "../assets/Home/linkedin.png";
 import github from "../assets/Home/github.png";
 
 const Home = () => {
-    const animatedElements = useRef([]);
-
     const location = useLocation();
 
     const scrollToSection = (id) => {
