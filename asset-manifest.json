@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.63bc5f74.css",
-    "main.js": "/static/js/main.2eaac5fd.js",
-    "static/js/488.aa742f80.chunk.js": "/static/js/488.aa742f80.chunk.js",
-    "static/media/Leo.png": "/static/media/Leo.65855ed6948ab43c3e2d.png",
-    "static/media/LeNet_miniplaces.png": "/static/media/LeNet_miniplaces.6fd4710a5c900379b741.png",
-    "static/media/Bascom.jpg": "/static/media/Bascom.af666a5ee442c0a4a599.jpg",
-    "static/media/LikeLionUWM.png": "/static/media/LikeLionUWM.5c94565dce8d1ef23672.png",
-    "static/media/email.png": "/static/media/email.c7674476efe310b8b1a6.png",
-    "static/media/imoticon.png": "/static/media/imoticon.2ad430075baa3f6cd7cb.png",
-    "static/media/BubbleBurster.png": "/static/media/BubbleBurster.58f18bcde081287d56b5.png",
-    "static/media/github.png": "/static/media/github.562cd1af0dd60d5da40d.png",
-    "static/media/linkedin.png": "/static/media/linkedin.daf47e5dc787df1ec2fe.png",
-    "index.html": "/index.html",
-    "main.63bc5f74.css.map": "/static/css/main.63bc5f74.css.map",
-    "main.2eaac5fd.js.map": "/static/js/main.2eaac5fd.js.map",
-    "488.aa742f80.chunk.js.map": "/static/js/488.aa742f80.chunk.js.map"
+    "main.css": "/Tyrrnien81/static/css/main.63bc5f74.css",
+    "main.js": "/Tyrrnien81/static/js/main.884f7212.js",
+    "static/js/488.aa742f80.chunk.js": "/Tyrrnien81/static/js/488.aa742f80.chunk.js",
+    "static/media/Leo.png": "/Tyrrnien81/static/media/Leo.65855ed6948ab43c3e2d.png",
+    "static/media/LeNet_miniplaces.png": "/Tyrrnien81/static/media/LeNet_miniplaces.6fd4710a5c900379b741.png",
+    "static/media/Bascom.jpg": "/Tyrrnien81/static/media/Bascom.af666a5ee442c0a4a599.jpg",
+    "static/media/LikeLionUWM.png": "/Tyrrnien81/static/media/LikeLionUWM.5c94565dce8d1ef23672.png",
+    "static/media/email.png": "/Tyrrnien81/static/media/email.c7674476efe310b8b1a6.png",
+    "static/media/imoticon.png": "/Tyrrnien81/static/media/imoticon.2ad430075baa3f6cd7cb.png",
+    "static/media/BubbleBurster.png": "/Tyrrnien81/static/media/BubbleBurster.58f18bcde081287d56b5.png",
+    "static/media/github.png": "/Tyrrnien81/static/media/github.562cd1af0dd60d5da40d.png",
+    "static/media/linkedin.png": "/Tyrrnien81/static/media/linkedin.daf47e5dc787df1ec2fe.png",
+    "index.html": "/Tyrrnien81/index.html",
+    "main.63bc5f74.css.map": "/Tyrrnien81/static/css/main.63bc5f74.css.map",
+    "main.884f7212.js.map": "/Tyrrnien81/static/js/main.884f7212.js.map",
+    "488.aa742f80.chunk.js.map": "/Tyrrnien81/static/js/488.aa742f80.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63bc5f74.css",
-    "static/js/main.2eaac5fd.js"
+    "static/js/main.884f7212.js"
   ]
 }
