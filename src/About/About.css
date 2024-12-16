@@ -1,0 +1,255 @@
+/* Layout Styles */
+.about {
+    min-height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    color: #fff;
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+    margin-left: 20%;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+
+    /* border: 1px solid var(--color-primary); */
+}
+
+/* About Title */
+.about-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: var(--color-text-main);
+    margin-bottom: 2.5rem;
+    position: relative;
+    /* border: 1px solid var(--color-primary); */
+    text-align: center;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.about-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 40%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.about-title:hover {
+    color: var(--color-primary);
+    transform: translateY(-2px); /* transform 값 증가 */
+    text-shadow: 2px 2px 4px rgba(100, 255, 218, 0.2);
+}
+
+.about-title:hover::after {
+    width: 60%;
+}
+
+/* About Image */
+.about-image {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.about-image img {
+    width: 130%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+
+    transition: transform 0.3s ease;
+    /* border: 1px solid var(--color-primary); */
+}
+
+.about-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Tabs */
+.tabs-container {
+    max-width: 550px;
+    margin-left: 20%;
+    margin-top: -10%;
+    /* border: 1px solid var(--color-primary); */
+}
+
+.tabs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    /* border: 1px solid var(--color-primary); */
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: 1.2rem;
+    font-family: var(--font-code);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.tab-btn::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.tab-btn.active {
+    color: var(--color-primary);
+}
+
+.tab-btn.active::after {
+    width: 100%;
+}
+
+/* Tab Content */
+.tab-content {
+    position: relative;
+    min-height: 300px;
+}
+
+.tab-pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.tab-pane.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Timeline Items */
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    border-left: 2px solid var(--color-primary);
+}
+
+.timeline-item h4 {
+    color: var(--color-text-main);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item .date {
+    color: var(--color-primary);
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.timeline-item p {
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+}
+
+.timeline-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-item ul li {
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.timeline-item ul li::before {
+    content: "▹";
+    position: absolute;
+    left: -1rem;
+    color: var(--color-primary);
+}
+
+/* Animations */
+.animate-on-scroll.animate {
+    animation: fadeInUp 1.2s forwards;
+}
+
+.about-image.animate {
+    animation: fadeInLeft 1.5s forwards;
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-image {
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .tabs-container {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+    }
+
+    .timeline-item {
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
+    }
+
+    .tabs {
+        gap: 1rem;
+    }
+
+    .tab-btn {
+        font-size: 1rem;
+    }
+}
