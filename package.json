@@ -1,43 +1,49 @@
 {
-  "name": "yeongjun-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@studio-freight/lenis": "^1.0.42",
-    "boxicons": "^2.1.4",
-    "cra-template": "1.2.0",
-    "gsap": "^3.12.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^7.0.2",
-    "react-scripts": "^5.0.1",
-    "remixicon": "^4.5.0",
-    "sass": "^1.82.0",
-    "web-vitals": "^4.2.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "yeongjun-portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@studio-freight/lenis": "^1.0.42",
+        "boxicons": "^2.1.4",
+        "cra-template": "1.2.0",
+        "gsap": "^3.12.5",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-helmet": "^6.1.0",
+        "react-router-dom": "^7.0.2",
+        "react-scripts": "^5.0.1",
+        "remixicon": "^4.5.0",
+        "sass": "^1.82.0",
+        "web-vitals": "^4.2.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "gh-pages": "^6.2.0"
+    },
+    "homepage": "https://Tyrrnien81.github.io"
 }
