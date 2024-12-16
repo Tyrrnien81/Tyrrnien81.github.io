@@ -1,0 +1,177 @@
+.projects {
+    min-height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.projects-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: var(--color-text-main);
+    margin-bottom: 3rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.projects-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 40%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.projects-title:hover {
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    text-shadow: 2px 2px 4px rgba(100, 255, 218, 0.2);
+}
+
+.projects-title:hover::after {
+    width: 60%;
+}
+
+.projects-grid {
+    /* border: 2px solid var(--color-primary); */
+    width: var(--container-width);
+    display: grid;
+    grid-template-columns: repeat(
+        3,
+        minmax(350px, 1fr)
+    ); /* 2열 레이아웃으로 변경 */
+    gap: 1rem;
+    margin: 0 auto;
+    /* padding: 0 2rem; */
+}
+
+.project-card {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    min-width: 330px; /* 최소 너비 설정 */
+    max-width: 500px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 중앙 정렬 */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    /* border: 1px solid var(--color-primary); 테두리 추가 */
+    border-radius: 10px;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 25, 47, 0.95);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: top 0.5s ease;
+}
+
+.project-card:hover .project-overlay {
+    top: 0;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.1);
+}
+
+.project-overlay h3 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-code);
+}
+
+.project-overlay p {
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.technologies span {
+    background: rgba(100, 255, 218, 0.1);
+    color: var(--color-primary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.project-links a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: transform 0.3s ease;
+}
+
+.project-links a:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* 작은 화면에서 1열로 변경 */
+        width: 85%;
+        max-width: 500px; /* 최대 너비 제한 */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        padding: 80px 0;
+    }
+
+    .projects-grid {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation */
+.animate-on-scroll.animate {
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
