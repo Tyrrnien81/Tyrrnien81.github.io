@@ -17,7 +17,7 @@ const Contact = () => {
                     </p>
                 </div>
 
-                <div className="home-social animate-on-scroll">
+                <div className="contact-social animate-on-scroll">
                     {/* <a
                                     href="tel:(920) 297-0501"
                                     target="_blank"
@@ -28,21 +28,21 @@ const Contact = () => {
                     <a
                         href="mailto:june121284@gmail.com"
                         target="_blank"
-                        className="home-social-links"
+                        className="contact-social-links"
                     >
                         <img src={email} alt="Email" />
                     </a>
                     <a
                         href="https://github.com/Tyrrnien81"
                         target="_blank"
-                        className="home-social-links"
+                        className="contact-social-links"
                     >
                         <img src={github} alt="GitHub" />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/june121284/"
                         target="_blank"
-                        className="home-social-links"
+                        className="contact-social-links"
                     >
                         <img src={linkedin} alt="LinkedIn" />
                     </a>
