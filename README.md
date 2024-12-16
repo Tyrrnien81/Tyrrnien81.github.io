@@ -1,4 +1,4 @@
-# 🌟 [Tyrrnien81's Portfolio Website]
+# 🌟 [Leo Jeong's Portfolio Website]
 
 Welcome to my personal portfolio website! This website showcases my skills, projects, and professional journey as a software developer specializing in computer science and data science. Explore my work and learn more about my experiences!
 
@@ -15,8 +15,8 @@ This is my personal portfolio website built to highlight my projects, skills, an
 -   **Responsive Design:** Optimized for desktop, tablet, and mobile devices.
 -   **Interactive Portfolio Gallery:** Explore my featured projects with detailed descriptions.
 -   **Professional Profile:** Includes an overview of my skills, experiences, and achievements.
-<!-- - **Contact Form:** Get in touch with me directly via the contact form. -->
 -   **Dynamic Content:** Easily updatable sections for ongoing project additions.
+<!-- - **Contact Form:** Get in touch with me directly via the contact form. -->
 
 ---
 
