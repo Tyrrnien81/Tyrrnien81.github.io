@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tyrrnien81/static/css/main.63bc5f74.css",
-    "main.js": "/Tyrrnien81/static/js/main.884f7212.js",
+    "main.js": "/Tyrrnien81/static/js/main.0cb10965.js",
     "static/js/488.aa742f80.chunk.js": "/Tyrrnien81/static/js/488.aa742f80.chunk.js",
     "static/media/Leo.png": "/Tyrrnien81/static/media/Leo.65855ed6948ab43c3e2d.png",
     "static/media/LeNet_miniplaces.png": "/Tyrrnien81/static/media/LeNet_miniplaces.6fd4710a5c900379b741.png",
@@ -14,11 +14,11 @@
     "static/media/linkedin.png": "/Tyrrnien81/static/media/linkedin.daf47e5dc787df1ec2fe.png",
     "index.html": "/Tyrrnien81/index.html",
     "main.63bc5f74.css.map": "/Tyrrnien81/static/css/main.63bc5f74.css.map",
-    "main.884f7212.js.map": "/Tyrrnien81/static/js/main.884f7212.js.map",
+    "main.0cb10965.js.map": "/Tyrrnien81/static/js/main.0cb10965.js.map",
     "488.aa742f80.chunk.js.map": "/Tyrrnien81/static/js/488.aa742f80.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63bc5f74.css",
-    "static/js/main.884f7212.js"
+    "static/js/main.0cb10965.js"
   ]
 }
