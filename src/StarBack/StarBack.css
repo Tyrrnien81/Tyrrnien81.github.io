@@ -1,0 +1,31 @@
+/* .star-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#000000, #1a1a1a);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: #ffffff;
+    border-radius: 50%;
+    animation: twinkle 10s infinite;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+} */
