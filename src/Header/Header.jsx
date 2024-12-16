@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
     const location = useLocation();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const scrollToSection = (id) => {
         if (location.pathname !== "/") {
@@ -14,6 +15,7 @@ const Header = () => {
         const section = document.getElementById(id);
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
+            setIsMenuOpen(false); // 메뉴 클릭 시 닫기
         } else {
             console.error(`Element with id "${id}" not found.`);
         }
@@ -30,7 +32,15 @@ const Header = () => {
                         Leo Jeong
                     </span>
                 </div>
-                <ul>
+                <div
+                    className="nav-toggle"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
                     <li onClick={() => scrollToSection("home")}>Home</li>
                     <li onClick={() => scrollToSection("about")}>About</li>
                     <li onClick={() => scrollToSection("skills")}>Skills</li>

@@ -152,7 +152,7 @@
     max-width: 450px;
     height: auto;
     border-radius: 10px;
-    border: 2px solid var(--color-primary);
+    /* border: 2px solid var(--color-primary); */
     opacity: 0;
     transform: translateX(50px);
     animation: none;

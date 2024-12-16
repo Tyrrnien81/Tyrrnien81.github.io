@@ -1,11 +1,12 @@
+/* Variables */
 :root {
     --primary-color: #64ffda;
-    --hover-color: #64ffda;
     --text-color: #ffffff;
+    --transition-speed: 0.3s;
 }
 
+/* Header Container */
 .header {
-    /* position: sticky; */
     position: fixed;
     top: 0;
     left: 0;
@@ -13,15 +14,21 @@
     padding: 15px 0;
     z-index: 1000;
     transition: background 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(2px); /* For additional smoothness */
+    backdrop-filter: blur(2px);
 }
 
-.logo-container {
+/* Navigation Layout */
+.header nav {
     display: flex;
     align-items: center;
-    margin-right: auto; /* Push navigation menu to the right */
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+
+    max-width: 1200px; /* 최대 너비 제한 추가 */
 }
 
+/* Logo Styles */
 .logo {
     position: relative;
     display: flex;
@@ -35,6 +42,7 @@
     color: var(--primary-color);
     letter-spacing: 1px;
     padding: 10px;
+    margin-left: 60px;
     transition: all 0.3s ease;
     font-family: "Montserrat", sans-serif;
 }
@@ -44,35 +52,18 @@
     transform: scale(1.05);
 }
 
-.header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 65%;
-    margin: 0 auto;
-    padding: 0 2%;
-}
-
+/* Navigation Menu */
 .header nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
     padding: 0;
-    margin: 0;
+    gap: 40px; /* 간격을 margin 대신 gap으로 설정 */
 }
 
-.header nav ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
+/* Navigation Items */
 .header nav ul li {
-    margin: 0 20px;
     color: var(--text-color);
     font-weight: bold;
     cursor: pointer;
@@ -81,6 +72,7 @@
     transition: all 0.3s ease;
 }
 
+/* Navigation Item Hover Effects */
 .header nav ul li::before {
     content: "";
     position: absolute;
@@ -92,14 +84,14 @@
     transition: all 0.3s ease;
 }
 
-.header nav ul li:hover::before {
-    width: 120%;
-    left: -10%;
-}
-
 .header nav ul li:hover {
     color: var(--primary-color);
     transform: translateY(-2px);
+}
+
+.header nav ul li:hover::before {
+    width: 120%;
+    left: -10%;
 }
 
 .header nav ul li:active {
@@ -107,6 +99,7 @@
     transform: scale(1.1);
 }
 
+/* Navigation Item Underline Effect */
 .header nav ul li::after {
     content: "";
     position: absolute;
@@ -123,13 +116,31 @@
     width: 50%;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-    .header nav ul {
-        flex-direction: column;
-        align-items: flex-end;
+    .header nav {
+        width: 90%; /* 모바일에서 너비 조정 */
+        padding: 0 5%;
     }
 
+    .header nav ul {
+        position: absolute;
+        top: 100%;
+        right: 5%;
+        padding: 1rem;
+        border-radius: 4px;
+        gap: 15px; /* 모바일에서의 간격 조정 */
+    }
+
+    .logo-text {
+        margin-left: 15px; /* 모바일에서 마진 축소 */
+        font-size: 18px; /* 모바일에서 폰트 크기 조정 */
+    }
+}
+
+/* 추가 반응형 브레이크포인트 */
+@media screen and (max-width: 480px) {
     .header nav ul li {
-        margin: 10px 0;
+        font-size: 16px;
     }
 }
