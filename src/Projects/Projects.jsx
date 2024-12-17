@@ -40,9 +40,9 @@ const Projects = () => {
             description:
                 "Developed an HTML5 Canvas game where players control a paddle to pop falling bubbles, featuring multiple difficulty levels and real-time statistics.",
             image: BubbleBurster,
-            technologies: ["HTML", "JavaScript"],
+            technologies: ["HTML", "CSS", "JavaScript"],
             githubLink: "https://github.com/Tyrrnien81/bubble-buster",
-            // demoLink: "https://likelion-projectteam.github.io/UWM",
+            demoLink: "https://tyrrnien81.github.io/Bubble-Burster/",
         },
     ];
 
