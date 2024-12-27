@@ -5,9 +5,27 @@ import LikeLionUWM from "../assets/Projects/LikeLionUWM.png";
 import Bascom from "../assets/Projects/Bascom.jpg";
 import LeNet_miniplaces from "../assets/Projects/LeNet_miniplaces.png";
 import BubbleBurster from "../assets/Projects/BubbleBurster.png";
+import ChillToPlate from "../assets/Projects/Chill-to-Plate.png";
 
 const Projects = () => {
     const projects = [
+        {
+            title: "Chill to Plate",
+            description:
+                "An AI-driven web application built with OpenAI’s GPT models that suggests cooking ideas tailored to your fridge’s ingredients and guides you through every step in a conversational interface.",
+            image: ChillToPlate,
+            technologies: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Node.js",
+                "Express",
+                "OpenAI",
+            ],
+            githubLink: "https://github.com/Tyrrnien81/Chill-to-Plate",
+            demoLink: "https://tyrrnien81.github.io/Chill-to-Plate/",
+        },
+
         {
             title: "Possibility to Reality",
             description:
