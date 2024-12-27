@@ -13,7 +13,7 @@ const Skills = () => {
         },
         {
             category: "Backend",
-            skills: ["Flask", "MySQL"],
+            skills: ["Flask", "Node.js", "MySQL"],
         },
         {
             category: "Platforms",
