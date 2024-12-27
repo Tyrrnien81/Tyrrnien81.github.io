@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.e82ec23c.css",
-    "main.js": "/static/js/main.cf7cd6f5.js",
+    "main.js": "/static/js/main.acda5a89.js",
     "static/js/488.aa742f80.chunk.js": "/static/js/488.aa742f80.chunk.js",
     "static/media/Leo.png": "/static/media/Leo.65855ed6948ab43c3e2d.png",
     "static/media/imoticon.png": "/static/media/imoticon.16ecc4f5b37b7a20f8af.png",
     "static/media/LeNet_miniplaces.png": "/static/media/LeNet_miniplaces.6fd4710a5c900379b741.png",
+    "static/media/Chill-to-Plate.png": "/static/media/Chill-to-Plate.c8a11016510564b216b7.png",
     "static/media/Bascom.jpg": "/static/media/Bascom.af666a5ee442c0a4a599.jpg",
     "static/media/LikeLionUWM.png": "/static/media/LikeLionUWM.5c94565dce8d1ef23672.png",
     "static/media/BubbleBurster.png": "/static/media/BubbleBurster.e2a2c6d9ff5850394900.png",
@@ -14,11 +15,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.daf47e5dc787df1ec2fe.png",
     "index.html": "/index.html",
     "main.e82ec23c.css.map": "/static/css/main.e82ec23c.css.map",
-    "main.cf7cd6f5.js.map": "/static/js/main.cf7cd6f5.js.map",
+    "main.acda5a89.js.map": "/static/js/main.acda5a89.js.map",
     "488.aa742f80.chunk.js.map": "/static/js/488.aa742f80.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e82ec23c.css",
-    "static/js/main.cf7cd6f5.js"
+    "static/js/main.acda5a89.js"
   ]
 }
