@@ -292,9 +292,10 @@
 
 @media (max-width: 768px) {
     .container {
-        width: 90%;
-        margin: 0 auto; /* 중앙 정렬을 위한 마진 추가 */
-        padding: 0 1rem; /* 좌우 여백 추가 */
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto; /* 좌우 동일 마진 */
+        padding: 0; /* 불필요한 좌우 여백 제거 */
     }
 
     .home-content {
@@ -306,7 +307,7 @@
     }
 
     .text-zone {
-        width: 100%; /* 전체 너비 사용 */
+        width: 10%; /* 전체 너비 사용 */
         display: flex;
         flex-direction: column;
         align-items: center; /* 텍스트 중앙 정렬 */
@@ -435,7 +436,7 @@
     .home-content {
         grid-template-columns: 1fr;
         text-align: center;
-        border: 2px solid var(--color-primary);
+        /* border: 2px solid var(--color-primary); */
     }
 
     .text-zone {

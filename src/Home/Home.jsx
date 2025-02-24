@@ -32,12 +32,13 @@ const Home = () => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("animate");
-                    } else {
-                        entry.target.classList.remove("animate");
                     }
+                    // else {
+                    //     entry.target.classList.remove("animate");
+                    // }
                 });
             },
-            { threshold: 0.1 }
+            { threshold: 0.2 }
         );
 
         const elements = document.querySelectorAll(".animate-on-scroll");
