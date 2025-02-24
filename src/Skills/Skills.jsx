@@ -13,7 +13,7 @@ const Skills = () => {
         },
         {
             category: "Backend",
-            skills: ["Flask", "Node.js", "MySQL"],
+            skills: ["Flask", "Node.js", "Express.js", "MySQL"],
         },
         {
             category: "Platforms",
@@ -21,7 +21,7 @@ const Skills = () => {
         },
         {
             category: "Tools & Others",
-            skills: ["Git", "VS Code", "Eclipse", "Postman", "Firebase"],
+            skills: ["Git", "Jira", "Slack", "Postman", "Firebase", "Figma"],
         },
     ];
 
