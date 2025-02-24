@@ -9,14 +9,13 @@
 .container {
     width: var(--container-width);
     margin: 0 auto;
-    margin-left: 20%;
 }
 
 .about-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 4rem;
-    margin-bottom: 300px;
+    /* margin-bottom: 400px; */
 
     /* border: 1px solid var(--color-primary); */
 }
@@ -27,7 +26,7 @@
     color: var(--color-text-main);
     margin-bottom: 2.5rem;
     position: relative;
-    /* border: 1px solid var(--color-primary); */
+
     text-align: center;
     transition: all 0.3s ease;
     display: inline-block;
@@ -126,6 +125,16 @@
 .tab-content {
     position: relative;
     min-height: 300px;
+    /* 기존 margin-bottom: 300px; 제거 */
+}
+
+/* 기본 탭별 마진 */
+.tab-content.experience {
+    margin-bottom: 900px; /* 내용이 많은 경우 */
+}
+
+.tab-content.education {
+    margin-bottom: 0px; /* 내용이 적은 경우 */
 }
 
 .tab-pane {
@@ -169,6 +178,7 @@
 
 .timeline-item p {
     color: var(--color-text-secondary);
+    font-size: 1.1rem;
     margin-bottom: 1rem;
 }
 
@@ -207,6 +217,20 @@
     }
 }
 
+@media (max-width: 1500px) {
+    /* education tab */
+    .tab-content.experience {
+        margin-bottom: 1200px;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* education tab */
+    .tab-content.experience {
+        margin-bottom: 1450px;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
     .about-content {
@@ -225,6 +249,22 @@
     .tabs-container {
         margin-top: 2rem;
     }
+
+    .tab-content {
+        position: relative;
+        min-height: 300px;
+        margin-left: -20%;
+    }
+
+    .about-title {
+        margin: 0 100px 2.5rem 100px; /* 좌우 margin auto로 중앙 정렬 */
+        text-align: center; /* 텍스트 중앙정렬 */
+    }
+
+    /* education tab */
+    .tab-content.experience {
+        margin-bottom: 900px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -234,6 +274,13 @@
 
     .timeline-item {
         padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 580px) {
+    /* education tab */
+    .tab-content.experience {
+        margin-bottom: 1100px;
     }
 }
 
@@ -248,9 +295,25 @@
 
     .tabs {
         gap: 1rem;
+        margin-left: -5%;
     }
 
     .tab-btn {
         font-size: 1rem;
+    }
+
+    /* education tab */
+    .tab-content.experience {
+        margin-bottom: 1000px;
+    }
+
+    .timeline-item p {
+        font-size: 1rem;
+    }
+
+    .timeline-item ul {
+        list-style: none;
+        font-size: 0.9rem;
+        padding: 0;
     }
 }

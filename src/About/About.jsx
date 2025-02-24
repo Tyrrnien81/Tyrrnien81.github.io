@@ -5,23 +5,23 @@ import imoticon from "../assets/About/imoticon.png";
 const About = () => {
     const [activeTab, setActiveTab] = useState("experience");
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("animate");
-                    }
-                });
-            },
-            { threshold: 0.1 }
-        );
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver(
+    //         (entries) => {
+    //             entries.forEach((entry) => {
+    //                 if (entry.isIntersecting) {
+    //                     entry.target.classList.add("animate");
+    //                 }
+    //             });
+    //         },
+    //         { threshold: 0.1 }
+    //     );
 
-        const elements = document.querySelectorAll(".animate-on-scroll");
-        elements.forEach((el) => observer.observe(el));
+    //     const elements = document.querySelectorAll(".animate-on-scroll");
+    //     elements.forEach((el) => observer.observe(el));
 
-        return () => observer.disconnect();
-    }, []);
+    //     return () => observer.disconnect();
+    // }, []);
 
     return (
         <section className="about" id="about">
@@ -51,28 +51,75 @@ const About = () => {
                             </button>
                         </div>
 
-                        <div className="tab-content">
+                        <div
+                            className={`tab-content ${
+                                activeTab === "education"
+                                    ? "education"
+                                    : "experience"
+                            }`}
+                        >
                             <div
                                 className={`tab-pane ${
                                     activeTab === "experience" ? "active" : ""
                                 }`}
                             >
                                 <div className="timeline-item">
-                                    <h4>Board Member</h4>
+                                    <h4>Software Engineer Intern</h4>
+                                    <span className="date">
+                                        February 2025 - Current
+                                    </span>
+                                    <p>AQUA ZONE</p>
+                                    <ul>
+                                        <li>
+                                            Develop and maintain an{" "}
+                                            <b>
+                                                automated inventory management
+                                                system
+                                            </b>{" "}
+                                            using{" "}
+                                            <b>
+                                                Node.js, Express.js, WebSockets,
+                                                and MySQL,
+                                            </b>{" "}
+                                            enabling{" "}
+                                            <b>real-time stock tracking</b> and
+                                            reducing mismanagement risks by
+                                            optimizing concurrency control.
+                                        </li>
+                                        <li>
+                                            <b>
+                                                Collaborate with
+                                                cross-functional teams
+                                            </b>{" "}
+                                            to refine system functionalities,
+                                            provide user training, and deliver
+                                            troubleshooting support for seamless
+                                            adoption.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="timeline-item">
+                                    <h4>Executive Board Member</h4>
                                     <span className="date">
                                         April 2024 - Current
                                     </span>
-                                    <p>LikeLion Wisconsin at UW-Madison</p>
+                                    <p>LIKELION Wisconsin at UW-Madison</p>
                                     <ul>
                                         <li>
-                                            Developing a functional service in
-                                            collaboration with team members
-                                            under the guidance of a mentor
+                                            Develop a functional service in{" "}
+                                            <b>
+                                                collaboration with team members
+                                            </b>{" "}
+                                            under the guidance of a mentor.
                                         </li>
                                         <li>
-                                            Wisconsin chapter of LikeLion, the
-                                            largest nonprofit coding bootcamp
-                                            company in South Korea
+                                            Wisconsin chapter of{" "}
+                                            <b>LIKELION US,</b> the{" "}
+                                            <b>
+                                                largest nonprofit coding
+                                                bootcamp company{" "}
+                                            </b>{" "}
+                                            in South Korea.
                                         </li>
                                     </ul>
                                 </div>
@@ -84,14 +131,27 @@ const About = () => {
                                     <p>Computer Science Union at UW-Madison</p>
                                     <ul>
                                         <li>
-                                            Leading a 4-member team, managing
-                                            development and ensuring project
-                                            success
+                                            Led a 4-member development team
+                                            using{" "}
+                                            <b>React.js, Django, and MySQL, </b>
+                                            adopting <b>
+                                                Scrum methodologies
+                                            </b>{" "}
+                                            via <b>Jira</b> for efficient sprint
+                                            planning and backlog management.
                                         </li>
-                                        {/* <li>
-                                            Collaborated with cross-functional
-                                            teams
-                                        </li> */}
+                                        <li>
+                                            Provided technical oversight by
+                                            conducting code reviews on{" "}
+                                            <b>
+                                                GitHub, implementing ESLint and
+                                                Prettier,
+                                            </b>{" "}
+                                            and facilitating sprint retros,
+                                            resulting in a{" "}
+                                            <b>20% reduction in defects </b> and
+                                            improved team collaboration.
+                                        </li>
                                     </ul>
                                 </div>
                                 <div className="timeline-item">
@@ -102,18 +162,35 @@ const About = () => {
                                     <p>Republic of Korea Army</p>
                                     <ul>
                                         <li>
-                                            Managed the ATCIS with Linux
-                                            servers, ensuring real-time
-                                            communication
+                                            Established and managed the{" "}
+                                            <b>
+                                                Army Tactical Command
+                                                Information System (ATCIS)
+                                            </b>{" "}
+                                            using{" "}
+                                            <b>
+                                                Linux servers and networking
+                                                protocols,
+                                            </b>{" "}
+                                            ensuring real-time data
+                                            communication and operational
+                                            efficiency at the border.
                                         </li>
                                         <li>
-                                            Provided mission-critical support
-                                            through Bash scripting and effective
-                                            teamwork
+                                            Performed{" "}
+                                            <b>
+                                                technical support and software
+                                                installations
+                                            </b>{" "}
+                                            for mission-critical systems,
+                                            leveraging <b>Bash scripting</b> and
+                                            teamwork to resolve issues quickly,{" "}
+                                            <b>reducing downtime by 30%.</b>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+
                             <div
                                 className={`tab-pane ${
                                     activeTab === "education" ? "active" : ""
