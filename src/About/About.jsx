@@ -71,20 +71,22 @@ const About = () => {
                                     <p>AQUA ZONE</p>
                                     <ul>
                                         <li>
-                                            Develop and maintain an{" "}
+                                            Design and implement a{" "}
+                                            <b>WebSocket-driven</b> inventory
+                                            management system using{" "}
                                             <b>
-                                                automated inventory management
-                                                system
-                                            </b>{" "}
-                                            using{" "}
-                                            <b>
-                                                Node.js, Express.js, WebSockets,
+                                                React.js, Node.js, Express.js,
                                                 and MySQL,
                                             </b>{" "}
-                                            enabling{" "}
-                                            <b>real-time stock tracking</b> and
-                                            reducing mismanagement risks by
-                                            optimizing concurrency control.
+                                            enabling real-time stock updates
+                                            across multiple locations.
+                                        </li>
+                                        <li>
+                                            <b>
+                                                Optimize operational efficiency
+                                            </b>{" "}
+                                            by reducing stock discrepancies and
+                                            ensuring data consistency.
                                         </li>
                                         <li>
                                             <b>
@@ -92,9 +94,8 @@ const About = () => {
                                                 cross-functional teams
                                             </b>{" "}
                                             to refine system functionalities,
-                                            provide user training, and deliver
-                                            troubleshooting support for seamless
-                                            adoption.
+                                            train users, and troubleshoot issues
+                                            to ensure smooth operation.
                                         </li>
                                     </ul>
                                 </div>
