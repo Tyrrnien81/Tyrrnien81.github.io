@@ -14,14 +14,7 @@ const Projects = () => {
             description:
                 "An AI-driven web application built with OpenAI’s GPT models that suggests cooking ideas tailored to your fridge’s ingredients and guides you through every step in a conversational interface.",
             image: ChillToPlate,
-            technologies: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Node.js",
-                "Express.js",
-                "OpenAI API",
-            ],
+            technologies: ["React.js", "Node.js", "Express.js", "OpenAI API"],
             githubLink: "https://github.com/Tyrrnien81/Chill-to-Plate",
             demoLink: "https://tyrrnien81.github.io/Chill-to-Plate/",
         },
