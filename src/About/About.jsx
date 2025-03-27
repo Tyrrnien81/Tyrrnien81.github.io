@@ -142,7 +142,7 @@ const About = () => {
                                 <div className="timeline-item">
                                     <h4>Software Coordinator</h4>
                                     <span className="date">
-                                        September 2023 - Current
+                                        September 2023 - January 2025
                                     </span>
                                     <p>Computer Science Union at UW-Madison</p>
                                     <ul>
