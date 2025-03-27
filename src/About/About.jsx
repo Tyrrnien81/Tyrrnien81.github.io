@@ -72,55 +72,70 @@ const About = () => {
                                     <ul>
                                         <li>
                                             Design and implement a{" "}
-                                            <b>WebSocket-driven</b> inventory
-                                            management system using{" "}
+                                            <b>
+                                                WebSocket-driven inventory
+                                                management system{" "}
+                                            </b>{" "}
+                                            using{" "}
                                             <b>
                                                 React.js, Node.js, Express.js,
                                                 and MySQL,
                                             </b>{" "}
                                             enabling real-time stock updates
-                                            across multiple locations.
+                                            across multiple facilities.
                                         </li>
                                         <li>
                                             <b>
-                                                Optimize operational efficiency
+                                                Streamline operational
+                                                efficiency
                                             </b>{" "}
-                                            by reducing stock discrepancies and
-                                            ensuring data consistency.
+                                            by minimizing stock discrepancies
+                                            and ensuring high data accuracy,
+                                            contributing to a stable supply
+                                            chain process.
                                         </li>
                                         <li>
                                             <b>
                                                 Collaborate with
                                                 cross-functional teams
                                             </b>{" "}
-                                            to refine system functionalities,
-                                            train users, and troubleshoot issues
-                                            to ensure smooth operation.
+                                            to conduct code reviews, implement
+                                            new features, and continuously
+                                            optimize system reliability.
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="timeline-item">
-                                    <h4>Executive Board Member</h4>
+                                    <h4>Web Developer</h4>
                                     <span className="date">
-                                        April 2024 - Current
+                                        January 2025 - Current
                                     </span>
-                                    <p>LIKELION Wisconsin at UW-Madison</p>
+                                    <p>LIKELION US</p>
                                     <ul>
                                         <li>
-                                            Develop a functional service in{" "}
                                             <b>
-                                                collaboration with team members
-                                            </b>{" "}
-                                            under the guidance of a mentor.
+                                                Collaborate with
+                                                cross-functional teams
+                                            </b>
+                                            —including project managers,
+                                            designers, and backend developers—to
+                                            build user-focused web applications
+                                            targeting{" "}
+                                            <b>300+ monthly active users.</b>
                                         </li>
                                         <li>
-                                            Wisconsin chapter of{" "}
-                                            <b>LIKELION US,</b> the{" "}
                                             <b>
-                                                largest nonprofit coding
-                                                bootcamp company{" "}
+                                                Utilize React, Redux, and
+                                                RESTful APIs
                                             </b>{" "}
-                                            in South Korea.
+                                            for efficient data retrieval and
+                                            state management.
+                                        </li>
+                                        <li>
+                                            Translate <b>Figma designs</b> into
+                                            responsive, high-performing
+                                            components, maintaining brand
+                                            consistency and visual accuracy.
                                         </li>
                                     </ul>
                                 </div>
