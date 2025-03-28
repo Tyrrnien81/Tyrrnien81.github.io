@@ -125,7 +125,7 @@ const About = () => {
                                         </li>
                                         <li>
                                             <b>
-                                                Utilize React, Redux, and
+                                                Utilize React.js, Redux, and
                                                 RESTful APIs
                                             </b>{" "}
                                             for efficient data retrieval and
