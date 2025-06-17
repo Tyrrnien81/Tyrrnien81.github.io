@@ -6,9 +6,24 @@ import Bascom from "../assets/Projects/Bascom.jpg";
 import LeNet_miniplaces from "../assets/Projects/LeNet_miniplaces.png";
 import BubbleBurster from "../assets/Projects/BubbleBurster.png";
 import ChillToPlate from "../assets/Projects/Chill-to-Plate.png";
+import GROW from "../assets/Projects/GROW.png";
 
 const Projects = () => {
     const projects = [
+        {
+            title: "GROW",
+            description:
+                "Cross-platform React Native app with a Firebase/PostgreSQL hybrid backend that enables UW-Madison students to discover courses, collaborate through secure real-time media-rich messaging, and engage with interactive analytics.",
+            image: GROW,
+            technologies: [
+                "React Native",
+                "TypeScript",
+                "Next.js",
+                "Firebase",
+                "PostgreSQL",
+            ],
+            githubLink: "https://github.com/Tyrrnien81/GROW",
+        },
         {
             title: "Chill to Plate",
             description:
