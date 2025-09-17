@@ -60,7 +60,7 @@ const Home = () => {
                                 Leo Jeong
                             </h1>
                             <h2 className="title animate-on-scroll">
-                                A CS Junior at <span>UW-Madison</span>
+                                A CS Senior at <span>UW-Madison</span>
                             </h2>
                             <h3 className="description animate-on-scroll">
                                 Passionate Aspiring Software Engineer

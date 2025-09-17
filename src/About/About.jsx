@@ -66,7 +66,7 @@ const About = () => {
                                 <div className="timeline-item">
                                     <h4>Software Engineer Intern</h4>
                                     <span className="date">
-                                        February 2025 - Current
+                                        May 2025 - August 2025
                                     </span>
                                     <p>AQUA ZONE</p>
                                     <ul>
@@ -108,7 +108,7 @@ const About = () => {
                                 <div className="timeline-item">
                                     <h4>Web Developer</h4>
                                     <span className="date">
-                                        January 2025 - Current
+                                        January 2025 - May 2025
                                     </span>
                                     <p>LIKELION US</p>
                                     <ul>
