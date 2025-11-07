@@ -68,7 +68,7 @@ const About = () => {
                                     <span className="date">
                                         May 2025 - August 2025
                                     </span>
-                                    <p>AQUA ZONE</p>
+                                    <p>AQUA ZONE | Los Angeles, CA</p>
                                     <ul>
                                         <li>
                                             Design and implement a{" "}
@@ -106,11 +106,11 @@ const About = () => {
                                     </ul>
                                 </div>
                                 <div className="timeline-item">
-                                    <h4>Web Developer</h4>
+                                    <h4>Software Developer Intern</h4>
                                     <span className="date">
                                         January 2025 - May 2025
                                     </span>
-                                    <p>LIKELION US</p>
+                                    <p>LIKELION US | Los Angeles, CA</p>
                                     <ul>
                                         <li>
                                             <b>

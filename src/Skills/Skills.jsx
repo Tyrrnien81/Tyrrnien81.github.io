@@ -5,19 +5,35 @@ const Skills = () => {
     const skillsList = [
         {
             category: "Languages",
-            skills: ["Python", "Java", "JavaScript", "C", "Bash"],
+            skills: ["Python", "Java", "JavaScript", "C / C++", "Bash"],
         },
         {
             category: "Frontend",
-            skills: ["React.js", "React Native", "HTML5", "CSS3", "JavaScript"],
+            skills: [
+                "React.js",
+                "React Native",
+                "JavaScript",
+                "TypeScript",
+                "Next.js",
+            ],
         },
         {
             category: "Backend",
-            skills: ["Flask", "Node.js", "Express.js", "MySQL"],
+            skills: ["Node.js", "Express.js", "Flask", "Django", "FastAPI"],
         },
         {
-            category: "Platforms",
-            skills: ["Windows", "Linux", "macOS"],
+            category: "Database",
+            skills: ["MySQL", "PostgreSQL", "SQLite", "MongoDB"],
+        },
+        {
+            category: "DevOps & Cloud",
+            skills: [
+                "Docker",
+                "GitHub Actions",
+                "Google Cloud Platform",
+                "AWS",
+                "Azure",
+            ],
         },
         {
             category: "Tools & Others",

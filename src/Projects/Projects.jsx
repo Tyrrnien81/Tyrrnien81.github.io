@@ -31,7 +31,7 @@ const Projects = () => {
             image: ChillToPlate,
             technologies: ["React.js", "Node.js", "Express.js", "OpenAI API"],
             githubLink: "https://github.com/Tyrrnien81/Chill-to-Plate",
-            demoLink: "https://tyrrnien81.github.io/Chill-to-Plate/",
+            liveLink: "https://tyrrnien81.github.io/Chill-to-Plate/",
         },
 
         {
@@ -41,7 +41,7 @@ const Projects = () => {
             image: LikeLionUWM,
             technologies: ["React.js", "HTML", "CSS", "JavaScript"],
             githubLink: "https://github.com/LikeLion-ProjectTeam/UWM",
-            demoLink: "https://likelion-projectteam.github.io/UWM",
+            liveLink: "https://likelion-projectteam.github.io/UWM",
         },
         {
             title: "Shortest Path Finder",
@@ -68,7 +68,7 @@ const Projects = () => {
             image: BubbleBurster,
             technologies: ["HTML", "CSS", "JavaScript"],
             githubLink: "https://github.com/Tyrrnien81/bubble-buster",
-            demoLink: "https://tyrrnien81.github.io/Bubble-Burster/",
+            liveLink: "https://tyrrnien81.github.io/Bubble-Burster/",
         },
     ];
 
@@ -111,6 +111,15 @@ const Projects = () => {
                                             rel="noopener noreferrer"
                                         >
                                             Demo <span>↗</span>
+                                        </a>
+                                    )}
+                                    {project.liveLink && (
+                                        <a
+                                            href={project.liveLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Live <span>↗</span>
                                         </a>
                                     )}
                                 </div>
