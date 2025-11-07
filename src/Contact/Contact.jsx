@@ -40,7 +40,7 @@ const Contact = () => {
                         <img src={github} alt="GitHub" />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/june121284/"
+                        href="https://www.linkedin.com/in/leo-jeong/"
                         target="_blank"
                         className="contact-social-links"
                     >
