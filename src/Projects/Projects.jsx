@@ -7,9 +7,43 @@ import LeNet_miniplaces from "../assets/Projects/LeNet_miniplaces.png";
 import BubbleBurster from "../assets/Projects/BubbleBurster.png";
 import ChillToPlate from "../assets/Projects/Chill-to-Plate.png";
 import GROW from "../assets/Projects/GROW.png";
+import PathOne from "../assets/Projects/PathOne-landing.png";
+import PulseMates from "../assets/Projects/PulseMates.png";
 
 const Projects = () => {
     const projects = [
+        {
+            title: "PulseMates",
+            description:
+                "PulseMates delivers an AI-powered 60-second mental health voice check-in that converts speech to text, analyzes emotions, generates personalized coaching with university resources, and returns professional audio guidance.",
+            image: PulseMates,
+            technologies: [
+                "React Native",
+                "Node.js",
+                "MySQL",
+                "Docker",
+                "OpenAI API",
+                "GCP",
+            ],
+            githubLink: "https://github.com/Tyrrnien81/PulseMates",
+            demoLink: "https://www.youtube.com/watch?v=7BYLppPJQj4",
+        },
+        {
+            title: "PathOne",
+            description:
+                "PathOne is an AI-assisted platform that helps exceptional founders and professionals assess their eligibility for EB-1A and O-1 visas, and provides auto-prefilled petition documents to save thousands in legal fees and months of time.",
+            image: PathOne,
+            technologies: [
+                "React.js",
+                "Node.js",
+                "FastAPI",
+                "SQLite",
+                "Hugging Face",
+                "RAG",
+            ],
+            githubLink: "https://github.com/Tyrrnien81/pathone",
+            demoLink: "https://youtu.be/CSjGoeb3TPA",
+        },
         {
             title: "GROW",
             description:
@@ -34,15 +68,15 @@ const Projects = () => {
             liveLink: "https://tyrrnien81.github.io/Chill-to-Plate/",
         },
 
-        {
-            title: "Possibility to Reality",
-            description:
-                "The official website for LikeLion Wisconsin, a student-led tech community focusing on web development and programming education.",
-            image: LikeLionUWM,
-            technologies: ["React.js", "HTML", "CSS", "JavaScript"],
-            githubLink: "https://github.com/LikeLion-ProjectTeam/UWM",
-            liveLink: "https://likelion-projectteam.github.io/UWM",
-        },
+        // {
+        //     title: "Possibility to Reality",
+        //     description:
+        //         "The official website for LikeLion Wisconsin, a student-led tech community focusing on web development and programming education.",
+        //     image: LikeLionUWM,
+        //     technologies: ["React.js", "HTML", "CSS", "JavaScript"],
+        //     githubLink: "https://github.com/LikeLion-ProjectTeam/UWM",
+        //     liveLink: "https://likelion-projectteam.github.io/UWM",
+        // },
         {
             title: "Shortest Path Finder",
             description:
