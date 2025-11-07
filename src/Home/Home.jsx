@@ -91,7 +91,7 @@ const Home = () => {
                                     <img src={github} alt="GitHub" />
                                 </a>
                                 <a
-                                    href="https://www.linkedin.com/in/june121284/"
+                                    href="https://www.linkedin.com/in/leo-jeong/"
                                     target="_blank"
                                     className="home-social-links"
                                 >
