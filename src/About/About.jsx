@@ -71,37 +71,28 @@ const About = () => {
                                     <p>AQUA ZONE | Los Angeles, CA</p>
                                     <ul>
                                         <li>
-                                            Design and implement a{" "}
+                                            Developed core features for{" "}
                                             <b>
-                                                WebSocket-driven inventory
-                                                management system{" "}
+                                                a real-time inventory platform
                                             </b>{" "}
-                                            using{" "}
-                                            <b>
-                                                React.js, Node.js, Express.js,
-                                                and MySQL,
-                                            </b>{" "}
-                                            enabling real-time stock updates
-                                            across multiple facilities.
+                                            that centralized stock across three
+                                            distributed warehouses, directly
+                                            supporting the company's expansion.
                                         </li>
                                         <li>
+                                            Built a real-time inventory system
+                                            with WebSockets to handle inventory
+                                            changes with{" "}
                                             <b>
-                                                Streamline operational
-                                                efficiency
-                                            </b>{" "}
-                                            by minimizing stock discrepancies
-                                            and ensuring high data accuracy,
-                                            contributing to a stable supply
-                                            chain process.
+                                                an average latency of under
+                                                200ms.
+                                            </b>
                                         </li>
                                         <li>
-                                            <b>
-                                                Collaborate with
-                                                cross-functional teams
-                                            </b>{" "}
-                                            to conduct code reviews, implement
-                                            new features, and continuously
-                                            optimize system reliability.
+                                            Designed a JWT-secured REST API with
+                                            role-based access control that
+                                            processed <b>over 100,000 daily</b>{" "}
+                                            inventory write operations securely.
                                         </li>
                                     </ul>
                                 </div>
@@ -113,29 +104,31 @@ const About = () => {
                                     <p>LIKELION US | Los Angeles, CA</p>
                                     <ul>
                                         <li>
+                                            Enhanced the front-end performance
+                                            and accessibility of{" "}
                                             <b>
-                                                Collaborate with
-                                                cross-functional teams
-                                            </b>
-                                            —including project managers,
-                                            designers, and backend developers—to
-                                            build user-focused web applications
-                                            targeting{" "}
-                                            <b>300+ monthly active users.</b>
-                                        </li>
-                                        <li>
-                                            <b>
-                                                Utilize React.js, Redux, and
-                                                RESTful APIs
+                                                a web application for 300+
+                                                users,
                                             </b>{" "}
-                                            for efficient data retrieval and
-                                            state management.
+                                            while also owning the release of new
+                                            features.
                                         </li>
                                         <li>
-                                            Translate <b>Figma designs</b> into
-                                            responsive, high-performing
-                                            components, maintaining brand
-                                            consistency and visual accuracy.
+                                            Drove a front-end performance
+                                            initiative,{" "}
+                                            <b>
+                                                cutting page load time by 27%
+                                                and API payloads by 25%
+                                            </b>{" "}
+                                            using code splitting and SWR.
+                                        </li>
+                                        <li>
+                                            <b>
+                                                Reduced critical WCAG issues by
+                                                20%{" "}
+                                            </b>
+                                            with Lighthouse CI and GitHub
+                                            Actions gates, unblocking releases.
                                         </li>
                                     </ul>
                                 </div>
