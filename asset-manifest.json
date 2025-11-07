@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6cfd9f8c.css",
-    "main.js": "/static/js/main.73358d96.js",
+    "main.js": "/static/js/main.94e6000a.js",
     "static/js/685.9314ac12.chunk.js": "/static/js/685.9314ac12.chunk.js",
     "static/media/PathOne-landing.png": "/static/media/PathOne-landing.e3bbd08c9dc02ba0166a.png",
     "static/media/Leo.png": "/static/media/Leo.65855ed6948ab43c3e2d.png",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.6cfd9f8c.css",
-    "static/js/main.73358d96.js"
+    "static/js/main.94e6000a.js"
   ]
 }
